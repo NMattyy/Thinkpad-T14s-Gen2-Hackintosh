@@ -104,6 +104,7 @@ You have to download the following kextd and put them into your `Kexts` folder :
 | [ForgedInvariant](https://github.com/ChefKissInc/ForgedInvariant/releases) | |
 | [ECEnabler](https://github.com/1Revenger1/ECEnabler/releases) | |
 | [BrightnessKeys](https://github.com/acidanthera/BrightnessKeys) | |
+| [iBridged](https://github.com/Carnations-Botanica/iBridged/releases) | |
 
 #### Map your USB     
 In Windows, download USBToolBox, extract It and open `windows.exe`. Go in the settings and enable `Native Classes` then,
@@ -222,3 +223,4 @@ As Apple removed AppleHDA since Tahoe Beta 2, there is no official audio support
 - [@CloverHackyColor](https://github.com/CloverHackyColor/) for [VoodooHDA](https://github.com/CloverHackyColor/VoodooHDA)
 - [@macos86](https://github.com/macos86/) for [SMCProcessorAMD](https://github.com/macos86/SMCProcessorAMD)
 - [@perez987](https://github.com/perez987/) for [AppleHDA back on Tahoe](https://github.com/perez987/AppleHDA-back-on-macOS-26-Tahoe)
+- [@Carnations-Botanica](https://github.com/Carnations-Botanica) for [iBridged](https://github.com/Carnations-Botanica/iBridged/)
