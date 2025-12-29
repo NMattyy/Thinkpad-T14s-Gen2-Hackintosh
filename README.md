@@ -164,7 +164,7 @@ If you want to to have fan and sensors reading, fan control and other thinkpad's
 Requires some addittional SSDT that you have to compile by yourself using your `DSDT.aml` and the example SSDTs that are available on their site.
 
 #### Audio support on Tahoe
-As Apple removed AppleHDA since Tahoe Beta 2, there is no official audio support, but, with the help of some tools, we can add It back without using [this guide](https://github.com/perez987/AppleHDA-back-on-macOS-26-Tahoe) instead of OCLP.
+As Apple removed AppleHDA since Tahoe Beta 2, there is no official audio support, but, with the help of some tools, we can add It back using [this guide](https://github.com/perez987/AppleHDA-back-on-macOS-26-Tahoe) instead of OCLP.
 
 ## 🔧 Status
 
