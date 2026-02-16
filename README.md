@@ -43,7 +43,7 @@
 ## MacOS Support
 
 This section only cover general compatibility of MacOS. I have not tested every version. For compatibility status see [Status](https://github.com/NMattyy/Thinkpad-T14s-G2-MacOS/?tab=readme-ov-file#-status).                                          
-`SMBIOS: MacBookPro16,3 (MacBookPro16,2 for Tahoe 26.x)`                       
+`SMBIOS: MacBookPro16,2`                       
 `Min version: Catalina 10.15.x` `Max Version: Tahoe 26.x`                      
 `Recommended: Ventura 13.x`                             
 
@@ -85,26 +85,28 @@ Then, you have to go on the `Tools` folder. Here you have to delete everything e
 I DO NOT TAKE ANY RESPONSABILITY IF YOU BREAK YOUR LAPTOP.     
 
 #### Kext folder setup        
-You have to download the following kextd and put them into your `Kexts` folder :
+You have to download the following kext and put them into your `Kexts` folder.
+My advice is to only use kexts that are strictly necessary (*) to allow macOS to function properly, as the more kexts you use, the less stable the system will be. 
 | Kext        |  Note             |
 | --------    | ----------------- |
-| [Lilu](https://github.com/acidanthera/Lilu/releases)   |                   |
-| [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases)  | From the zip folder that you get when you download this kext you have to also pick `SMCBattery`                |
-| [SMCProcessorAMD](https://github.com/macos86/SMCProcessorAMD/releases)            | Optional. Gives SMC reading for the CPU |
-| [SMCRadeonSensors](https://github.com/ChefKissInc/SMCRadeonSensors/releases)            | Optional. Gives SMC reading for the GPU |
-| [NootedRed](https://nightly.link/ChefKissInc/NootedRed/workflows/main/master/Artifacts.zip)            | Could cause some problem on Sonoma+ so, during the installation process and the out of the box experience, disable It, change the background to a static one and change your account avatar to a normal photo, then you can re-enable It.    | 
-| [AppleALC](https://github.com/acidanthera/AppleALC/releases)            | You can use `alcid=11` as codec in your boot-args       |
-|  [RTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)           | Use version `2.4.2` as version `2.5.0` is not meant for AMD CPUs |
+| [Lilu *](https://github.com/acidanthera/Lilu/releases)   |                   |
+| [VirtualSMC *](https://github.com/acidanthera/VirtualSMC/releases)  | From the zip folder that you get when you download this kext you have to also pick `SMCBattery`                |
+| [SMCProcessorAMD](https://github.com/macos86/SMCProcessorAMD/releases)            | Gives SMC reading for the CPU |
+| [SMCRadeonSensors](https://github.com/ChefKissInc/SMCRadeonSensors/releases)            | Gives SMC reading for the GPU |
+| [NootedRed *](https://nightly.link/ChefKissInc/NootedRed/workflows/main/master/Artifacts.zip)            | Could cause some problem on Sonoma+ so, during the installation process and the out of the box experience, disable It, change the background to a static one and change your account avatar to a normal photo, then you can re-enable It.    | 
+| [AppleALC *](https://github.com/acidanthera/AppleALC/releases)            | You can use `alcid=11` as codec in your boot-args       |
+|  [RTL8111 *](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)           | Use version `2.4.2` as version `2.5.0` is not meant for AMD CPUs |
 | [Itlwm or AirportItlwm](https://openintelwireless.github.io/itlwm/)    | If you're installing Ventura or lower you can use AirportItlwm as it enables native wifi but, if you're installing Sonoma+, itlwm + heliport is reccomended (Read the guide from the link to understand better)       |
-| [OpenIntelBluetooth](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases) | On macOS 12+ you need to use IntelBluetoothFirmware and IntelBTPatcher from the zip that you just downloaded, and BlueToolFixup from [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases). |
-|[VoodooPS2](https://github.com/acidanthera/VoodooPS2/releases) ||
-| [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C/releases) | This enables just trackpad but, If you want, you can also add VoodooI2CHID to also enables touchscreen. |
-| [NVMeFix](https://github.com/acidanthera/NVMeFix/releases) | |
-| [AppleMCEReporterDisabler](https://chefkissinc.github.io/Extras/Kexts/AppleMCEReporterDisabler.zip) | |
-| [ForgedInvariant](https://github.com/ChefKissInc/ForgedInvariant/releases) | |
-| [ECEnabler](https://github.com/1Revenger1/ECEnabler/releases) | |
-| [BrightnessKeys](https://github.com/acidanthera/BrightnessKeys) | |
+| [OpenIntelBluetooth *](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases) | On macOS 12+ you need to use IntelBluetoothFirmware and IntelBTPatcher from the zip that you just downloaded, and BlueToolFixup from [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases). |
+|[VoodooPS2 *](https://github.com/acidanthera/VoodooPS2/releases) ||
+| [VoodooI2C *](https://github.com/VoodooI2C/VoodooI2C/releases) | This enables just trackpad but, If you want, you can also add VoodooI2CHID to also enables touchscreen. |
+| [NVMeFix *](https://github.com/acidanthera/NVMeFix/releases) | |
+| [AppleMCEReporterDisabler *](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip) | |
+| [ForgedInvariant *](https://github.com/ChefKissInc/ForgedInvariant/releases) | |
+| [ECEnabler *](https://github.com/1Revenger1/ECEnabler/releases) | |
+| [BrightnessKeys *](https://github.com/acidanthera/BrightnessKeys/releases) | |
 | [iBridged](https://github.com/Carnations-Botanica/iBridged/releases) | |
+| [YogaSMC](https://github.com/zhen-zen/YogaSMC/releases) | Follow [this guide](https://github.com/NMattyy/Thinkpad-T14s-G2-MacOS?tab=readme-ov-file#yogasmc-features) |
 
 #### Map your USB     
 In Windows, download USBToolBox, extract It and open `windows.exe`. Go in the settings and enable `Native Classes` then,
